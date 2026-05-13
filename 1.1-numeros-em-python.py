@@ -1,35 +1,92 @@
-# aula completa: nmeros em python
-""""
-vamos aprender
-1- tipos numericos 
-2-conversão de tipos 
-3-hierarquia numerica 
-4- operações matematicas 
-5- coerção de tipos 
-6-verificações de tipos 
-7- entrada de dados
+#AULA COMPLETA: NUMEROS EM PYTHON
+
 """
-#===========================================
-##passo 1 - tpos numericos 
-#===========================================
-# int -> numeros inteiros 
-# float -> numeros complexos (usado em matematica/engenharia)
+Vamos aprender:
+1 - Tipos numéricos
+2 - Conversões de tipos
+3 - Hierarquia numérica
+4 - Operações matemáticas
+5 - Coerção de tipos
+6 - Verificação de tipos
+7 - Entrada de dados
+"""
+#===============================================================
+## PASSO 01 - TIPOS NUMÉRICOS
+#===============================================================
+# INT -> números inteiros
+# float -> números com casas decimais
+# complex -> números complexos (usado em matemática/engenharia)
 
-print ("====== tipos numericos =======")
-       
+print ("===== TIPOS NUMÉRICOS =====")
 
-# exemplo 01 - numero inteiro 
+# EXEMPLO 01 - NUMERO INTEIRO
 
-#criamos uma vaiavel chamada numero inteiro 
+#criamos uma variavel chamada numero_inteiro
 numero_inteiro = 10
 
-#mostramos o valor 
-print ("valor:", numero_inteiro)
+#Mostramos o valor
+print ("Valor:", numero_inteiro)
+
+#Type () mostra qual é o tipo da variável
+print ("Tipo:", type(numero_inteiro))
+
+print("---------------------------------")
+#Exemplo 2 - NUMERO COM CASA DECIMAL
+
+# criamos uma variavel chamada numero_decimal
+numero_decimal = 3.14
+# mostramos o valor
+print("Valor:", numero_decimal)
+# mostramos o tipo
+print("Tipo:", type(numero_decimal))
+
+print("---------------------------------")
+
+# EXEMPLO 3 - NUMERO COMPLEXO
+# criamos uma variavel chamada numero_completo
+# Parte Real (2) + Parte Imaginaria (3j)
+
+# estrutura geral:
+# numero = a + bj
+
+# a = parte real
+# b = parte imaginária
+# c = unidade imaginária
+numero_complexo = 2 + 3j
+
+# mostramos o valor
+print("Valor:", numero_complexo)
+# mostramos o tipo
+print ("Tipo:", type(numero_complexo))
+
+print("---------------------------------")
+
+# EXEMPLO 3 - ACESSANDO CADA PARTE DO NÚMERO
+
+# .real retorna a parte real
+print ("Parte Real:", numero_complexo.real)
+
+# .imag retorna a parte imaginária
+print ("Parte Imaginária:", numero_complexo.imag)
+# apenas para separar visualmente a saida no terminal
+print("\n")
+
+#================================================
+## PASSO 02 - CONVERSÃO TIPOS
+#================================================
+
+## Exemplo Classico
+## Dados vindos do usuario são texto (string), muitas vezes é necessário converter eles.
+
+print("====== Conversões ======")
+
+# float -> int
+
+valor = int(3.9)
+
+print("int(3.9):", valor)
+print("Tipo:", type(valor))
 
 
-#type () mostrar qual é o tipo de variavel 
-print ("tipo:", type(numero_inteiro))
-
-print ("-------------------------")
-
+      
 
